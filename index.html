@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <script src="https://use.fontawesome.com/6d4ff0ba51.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MyMusicList App</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed|Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center">
+                <i class="fa fa-music text-success"></i> My<span class="text-success">Music</span>List</h1>
+                <form id="music-form">
+                    <div class="form-group">
+                        <label for="name">Album</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="artist">Artist</label>
+                        <input type="text" id="artist" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre" class="form-control">
+                    </div>
+                    <input type="submit" value="Add Music" class="btn btn-success btn-lg">
+                </form>
+                <table class="table table-bordered table-hover mt-5">
+                    <thead>
+                        <tr>
+                            <th>Artist</th>
+                            <th>Album</th>
+                            <th>Genre</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="music-list"></tbody>
+                </table>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
