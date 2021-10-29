@@ -7,4 +7,3 @@ Enter the names of the artist, album, and genre in their respective input fields
 
 Future changes I'm thinking of implementing:
 - make it Full-Stack, and connect it to a database so music info can be saved
-- integrate Spotify's web API to fetch the music's metadata and possibly even allow the music to be played
